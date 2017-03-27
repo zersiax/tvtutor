@@ -1,6 +1,6 @@
 class Instructor::LessonsController < ApplicationController
-  def new
-   @section = Section.find(params[section_id])
+  def new 
+   @section = Section.find(params[:section_id])
    @lesson = Lesson.new
    
   end
@@ -11,7 +11,7 @@ class Instructor::LessonsController < ApplicationController
     redirect_to instructor_course_path
     
   end
-end
+
 
 private
 
